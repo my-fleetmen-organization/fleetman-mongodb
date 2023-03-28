@@ -25,10 +25,7 @@ pipeline {
 
       stage('Push Image to Docker Hub') {
          steps {
-            sh '''
-               docker login -u ${YOUR_DOCKERHUB_USERNAME} -p ${DOCKER_HUB_ACCESS_TOKEN}
-               docker push $REPOSITORY_TAG
-            '''
+            sh '''echo No Push Image to Docker Hub'''
          }
       }
 
